@@ -36,7 +36,7 @@ app.use("/api/v1/admin", require("./routes/adminRoutes"));
 // app.use(express.static(path.join(__dirname, "./client/build")))
 
 //static routes
-app.get('*', function(req, res){
+app.get('/', function(req, res){
     res.setHeader("Access-Control-Allow-Credentials","true");
     // res.sendFile(path.join(__dirname, "./client/build/index.html"));
     res.send("API is running..");
